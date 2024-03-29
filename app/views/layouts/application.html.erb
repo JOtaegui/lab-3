@@ -106,6 +106,17 @@
     alert('Thank you for your message, we will contact you soon.');
     this.reset();
   });
+
+  window.addEventListener('DOMContentLoaded', function() {
+        const path = window.location.pathname;
+        if (path === '/about') {
+          showPage('about');
+        } else if (path === '/contact') {
+          showPage('contact');
+        } else {
+          showPage('home');
+        }
+      });
 </script>
 
 </body>
